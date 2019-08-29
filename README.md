@@ -217,7 +217,7 @@ public class Demo {
                 CvRect r = new CvRect(cvGetSeqElem(faces, i));
                 int x = r.x(), y = r.y(), w = r.width(), h = r.height();
                 cvRectangle(grabbedImage, cvPoint(x, y), cvPoint(x+w, y+h), CvScalar.RED, 1, CV_AA, 0);
-
+ 1233
                 // To access or pass as argument the elements of a native array, call position() before.
                 hatPoints.position(0).x(x-w/10)   .y(y-h/10);
                 hatPoints.position(1).x(x+w*11/10).y(y-h/10);
